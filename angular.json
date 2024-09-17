@@ -29,7 +29,6 @@
                 "input": "public"
               },
               "src/_redirects"
-              
             ],
             "styles": [
               "@angular/material/prebuilt-themes/azure-blue.css",
@@ -56,7 +55,8 @@
             "development": {
               "optimization": false,
               "extractLicenses": false,
-              "sourceMap": true
+              "sourceMap": true,
+              "namedChunks": true
             }
           },
           "defaultConfiguration": "production"
