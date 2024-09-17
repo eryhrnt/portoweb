@@ -1,0 +1,122 @@
+<main>
+    <!-- Project Section -->
+    <section>
+        <h2>My Projects</h2>
+        <mat-tab-group>
+          
+            <!-- Front-End -->
+            <mat-tab>
+              <ng-template mat-tab-label>
+                <mat-icon class="example-tab-icon">computer</mat-icon>
+                Front-End
+              </ng-template>
+              <article>
+                <mat-grid-list cols="2" rowHeight="200px" gutterSize="16px">
+                  @for (project of frontendProjects; track frontendProjects) {
+                    <mat-grid-tile class="project-tile">
+                      <div class="project-content">
+                        <img [src]="project.image" alt="{{project.title}}" class="project-image">
+                        <div class="project-info">
+                          <h3 class="project-title">{{project.title}}</h3>
+                        </div>
+                      </div>
+                    </mat-grid-tile>
+                    <mat-grid-tile>
+                      <p class="project-description">{{project.description}}</p>
+                    </mat-grid-tile>
+                  }
+                  
+                </mat-grid-list>
+              </article>
+            </mat-tab>
+
+            <!-- Data Analysis -->
+            <mat-tab>
+              <ng-template mat-tab-label>
+                <mat-icon class="example-tab-icon">insert_chart</mat-icon>
+                Data Analysis
+              </ng-template>
+
+              <article>
+                <mat-grid-list cols="2" rowHeight="200px" gutterSize="16px">
+                  @for (project of dataAnalysisProjects; track dataAnalysisProjects) {
+                    <mat-grid-tile class="project-tile">
+                      <div class="project-content">
+                        <img [src]="project.image" alt="{{project.title}}" class="project-image">
+                        <div class="project-info">
+                          <h3 class="project-title">{{project.title}}</h3>
+                        </div>
+                      </div>
+                    </mat-grid-tile>
+                    <mat-grid-tile>
+                      <p class="project-description">{{project.description}}</p>
+                    </mat-grid-tile>
+                  }
+                </mat-grid-list>
+              </article>
+
+            </mat-tab>
+            <!-- Game Music FX -->
+            <mat-tab>
+              <ng-template mat-tab-label>
+                <mat-icon class="example-tab-icon">library_music</mat-icon>
+                Game Music & FX
+              </ng-template>
+          
+              <article>
+                <mat-grid-list cols="2" rowHeight="200px" gutterSize="16px">
+                  @for (project of gameMusicProjects; track gameMusicProjects) {
+                    <mat-grid-tile class="project-tile">
+                      <div class="project-content">
+                        <img [src]="project.image" alt="{{project.title}}" class="project-image">
+                        <div class="project-info">
+                          <h3 class="project-title">{{project.title}}</h3>
+                        </div>
+                      </div>
+                    </mat-grid-tile>
+                    <mat-grid-tile>
+                      <p class="project-description">{{project.description}}</p>
+                    </mat-grid-tile>
+                  }
+                  
+                </mat-grid-list>
+              </article>
+
+            </mat-tab>
+          </mat-tab-group>
+        
+    </section>
+
+    <!-- About Section -->
+    <section>
+        <mat-grid-list cols="2" rowHeight="400px" gutterSize="10px">
+            <!-- Profile -->
+            <mat-grid-tile colspan="1" class="navbar-logo">
+                <ul>
+                    <li><h1>About Me</h1></li>
+                    <li><p>Informatics graduate with a focus on programming, software analysis, and design. Recognized for being active, 
+                        honest, responsible, and possessing a strong curiosity and dedication to continuous learning, thriving in 
+                        demanding environments.</p></li>
+                    <li><img src="../assets/"></li>
+                    <li><p>Ery Harinanto</p></li>
+                    <li><a href="">Download my resume</a></li>
+                    <li>Social Media</li>
+                </ul>
+            </mat-grid-tile>
+            <!-- Quote -->
+            <mat-grid-tile colspan="1" class="navbar-links">
+                <h1>Creation is the bridge between imagination and reality; every new idea brings the world closer to what it could 
+                    be.</h1>
+            </mat-grid-tile>
+        </mat-grid-list>
+    </section>
+
+    <!-- Contact Section -->
+    <section>
+        <h1>What do you want for your project?</h1>
+        <p>Transform your vision into reality with a partner who brings creativity, expertise, and dedication to every project. 
+          Let's collaborate to create something exceptional that not only meets your goals but exceeds your expectations.</p>
+        <button>Contact Me</button>
+    </section>
+
+</main>
