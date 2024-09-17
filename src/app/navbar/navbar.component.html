@@ -1,17 +1,33 @@
-<nav class="navbar">
-  <mat-grid-list cols="5" rowHeight="75px" gutterSize="10px">
-      <!-- Logo -->
-      <mat-grid-tile colspan="1" class="navbar-logo">
-        <!-- <img src="../assets/logo.png" alt="Logo" height="40"> -->
-        <h5>Ery Harinanto</h5>
-      </mat-grid-tile>
-      <!-- Navigation Links -->
-      <mat-grid-tile colspan="3" class="navbar-links">
-        <div class="button-row">
-          <a mat-button href="#" target="_blank">Projects</a>
-          <a mat-button href="#" target="_blank">About</a>
-          <a mat-button href="#" target="_blank">Contacts</a>
-        </div>
-      </mat-grid-tile>
+<div class="bg-cyan-200 w-full fixed backdrop-blur-sm bg-opacity-90 z-10 backdrop-filter shadow-xl">
+
+  <mat-grid-list cols="5" rowHeight="60px" gutterSize="10px">
+    <!-- Logo -->
+    <mat-grid-tile colspan="1" class="navbar-logo">
+      <!-- <img src="../assets/logo.png" alt="Logo" height="40"> -->
+      <a class="flex">
+        <img src="assets/sigma.png" height="45" width="45">
+        <button class="font-semibold text-2xl py-2 px-4 rounded-l">Ery Harinanto</button>
+      </a>
+    </mat-grid-tile>
+    <!-- Navigation Links -->
+    <mat-grid-tile colspan="3" class="navbar-links">
+      <div class="button-row">
+        <a href="#MyProjects">
+          <button
+            class="hover:bg-gray-900 hover:text-cyan-50 duration-300 text-gray-800 font-medium py-2 px-4 rounded-l">Projects
+          </button>
+        </a>
+        <a href="#About">
+          <button
+            class="hover:bg-gray-900 hover:text-cyan-50 duration-300 text-gray-800 font-medium py-2 px-4">About
+          </button>
+        </a>
+        <a href="#Contacts">
+          <button
+            class="hover:bg-gray-900 hover:text-cyan-50 duration-300 text-gray-800 font-medium py-2 px-4 rounded-r">Contacts
+          </button>
+        </a>
+      </div>
+    </mat-grid-tile>
   </mat-grid-list>
-</nav>
+</div>

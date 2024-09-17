@@ -1,122 +1,145 @@
 <main>
-    <!-- Project Section -->
-    <section>
-        <h2>My Projects</h2>
-        <mat-tab-group>
-          
-            <!-- Front-End -->
-            <mat-tab>
-              <ng-template mat-tab-label>
-                <mat-icon class="example-tab-icon">computer</mat-icon>
-                Front-End
-              </ng-template>
-              <article>
-                <mat-grid-list cols="2" rowHeight="200px" gutterSize="16px">
-                  @for (project of frontendProjects; track frontendProjects) {
-                    <mat-grid-tile class="project-tile">
-                      <div class="project-content">
-                        <img [src]="project.image" alt="{{project.title}}" class="project-image">
-                        <div class="project-info">
-                          <h3 class="project-title">{{project.title}}</h3>
-                        </div>
-                      </div>
-                    </mat-grid-tile>
-                    <mat-grid-tile>
-                      <p class="project-description">{{project.description}}</p>
-                    </mat-grid-tile>
-                  }
-                  
-                </mat-grid-list>
-              </article>
-            </mat-tab>
+  <!-- Project Section -->
+  <section id="MyProjects" class="px-20 pt-20">
+    <p class="mb-20 text-center text-6xl font-medium text-cyan-900">My Projects</p>
+    <mat-tab-group>
 
-            <!-- Data Analysis -->
-            <mat-tab>
-              <ng-template mat-tab-label>
-                <mat-icon class="example-tab-icon">insert_chart</mat-icon>
-                Data Analysis
-              </ng-template>
-
-              <article>
-                <mat-grid-list cols="2" rowHeight="200px" gutterSize="16px">
-                  @for (project of dataAnalysisProjects; track dataAnalysisProjects) {
-                    <mat-grid-tile class="project-tile">
-                      <div class="project-content">
-                        <img [src]="project.image" alt="{{project.title}}" class="project-image">
-                        <div class="project-info">
-                          <h3 class="project-title">{{project.title}}</h3>
-                        </div>
-                      </div>
-                    </mat-grid-tile>
-                    <mat-grid-tile>
-                      <p class="project-description">{{project.description}}</p>
-                    </mat-grid-tile>
-                  }
-                </mat-grid-list>
-              </article>
-
-            </mat-tab>
-            <!-- Game Music FX -->
-            <mat-tab>
-              <ng-template mat-tab-label>
-                <mat-icon class="example-tab-icon">library_music</mat-icon>
-                Game Music & FX
-              </ng-template>
-          
-              <article>
-                <mat-grid-list cols="2" rowHeight="200px" gutterSize="16px">
-                  @for (project of gameMusicProjects; track gameMusicProjects) {
-                    <mat-grid-tile class="project-tile">
-                      <div class="project-content">
-                        <img [src]="project.image" alt="{{project.title}}" class="project-image">
-                        <div class="project-info">
-                          <h3 class="project-title">{{project.title}}</h3>
-                        </div>
-                      </div>
-                    </mat-grid-tile>
-                    <mat-grid-tile>
-                      <p class="project-description">{{project.description}}</p>
-                    </mat-grid-tile>
-                  }
-                  
-                </mat-grid-list>
-              </article>
-
-            </mat-tab>
-          </mat-tab-group>
-        
-    </section>
-
-    <!-- About Section -->
-    <section>
-        <mat-grid-list cols="2" rowHeight="400px" gutterSize="10px">
-            <!-- Profile -->
-            <mat-grid-tile colspan="1" class="navbar-logo">
-                <ul>
-                    <li><h1>About Me</h1></li>
-                    <li><p>Informatics graduate with a focus on programming, software analysis, and design. Recognized for being active, 
-                        honest, responsible, and possessing a strong curiosity and dedication to continuous learning, thriving in 
-                        demanding environments.</p></li>
-                    <li><img src="../assets/"></li>
-                    <li><p>Ery Harinanto</p></li>
-                    <li><a href="">Download my resume</a></li>
-                    <li>Social Media</li>
-                </ul>
+      <!-- Front-End -->
+      <mat-tab class="">
+        <ng-template mat-tab-label>
+          <mat-icon class="style-icon">computer</mat-icon>
+          <p class="text-xl font-medium text-cyan-900">Front-End</p>
+        </ng-template>
+        <article>
+          <mat-grid-list cols="2" rowHeight="400px" gutterSize="16px">
+            @for (project of frontendProjects; track frontendProjects) {
+            <mat-grid-tile class="project-tile">
+              <div class="project-content">
+                <img [src]="project.image" class="w-48 h-48">
+                <div class="project-info">
+                  <h3 class="text-xl font-medium p-3">{{project.title}}</h3>
+                </div>
+              </div>
             </mat-grid-tile>
-            <!-- Quote -->
-            <mat-grid-tile colspan="1" class="navbar-links">
-                <h1>Creation is the bridge between imagination and reality; every new idea brings the world closer to what it could 
-                    be.</h1>
+            <mat-grid-tile>
+              <p class="project-description">{{project.description}}</p>
             </mat-grid-tile>
-        </mat-grid-list>
-    </section>
+            }
 
-    <!-- Contact Section -->
-    <section>
-        <h1>What do you want for your project?</h1>
-        <p>Transform your vision into reality with a partner who brings creativity, expertise, and dedication to every project. 
-          Let's collaborate to create something exceptional that not only meets your goals but exceeds your expectations.</p>
-        <button>Contact Me</button>
-    </section>
+          </mat-grid-list>
+        </article>
+      </mat-tab>
+
+      <!-- Data Analysis -->
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <mat-icon class="style-icon">insert_chart</mat-icon>
+          <p class="text-xl font-medium text-cyan-900">Data Analysis</p>
+        </ng-template>
+
+        <article>
+          <mat-grid-list cols="2" rowHeight="400px" gutterSize="16px">
+            @for (project of dataAnalysisProjects; track dataAnalysisProjects) {
+            <mat-grid-tile class="project-tile">
+              <div class="project-content">
+                <img [src]="project.image" class="w-48 h-48">
+                <div class="project-info">
+                  <h3 class="text-xl font-medium p-3">{{project.title}}</h3>
+                </div>
+              </div>
+            </mat-grid-tile>
+            <mat-grid-tile>
+              <p class="project-description">{{project.description}}</p>
+            </mat-grid-tile>
+            }
+          </mat-grid-list>
+        </article>
+
+      </mat-tab>
+      <!-- Game Music FX -->
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <mat-icon class="style-icon">library_music</mat-icon>
+          <p class="text-xl font-medium text-cyan-900">Game Music & FX</p>
+        </ng-template>
+
+        <article>
+          <mat-grid-list cols="2" rowHeight="400px" gutterSize="16px">
+            @for (project of gameMusicProjects; track gameMusicProjects) {
+            <mat-grid-tile class="project-tile">
+              <div class="project-content">
+                <img [src]="project.image" class="w-48 h-48">
+                <div class="project-info">
+                  <h3 class="text-xl font-medium p-3">{{project.title}}</h3>
+                </div>
+              </div>
+            </mat-grid-tile>
+            <mat-grid-tile>
+              <p class="project-description">{{project.description}}</p>
+            </mat-grid-tile>
+            }
+
+          </mat-grid-list>
+        </article>
+
+      </mat-tab>
+    </mat-tab-group>
+
+  </section>
+
+  <!-- About Section -->
+  <section id="About" class="py-20">
+    <mat-grid-list cols="2" rowHeight="500px" gutterSize="10px">
+      <!-- Profile -->
+      <mat-grid-tile colspan="1" class="bg-cyan-50">
+        <ul>
+          <li class="flex justify-center">
+            <div class=" w-32 h-32 rounded-full overflow-clip bg-red-500 mb-5">
+              <img src="assets/avatar.jpg" width="160" height="160" class="">
+            </div>
+          
+          <li>
+            <p class="text-center text-3xl font-semibold mb-5 text-cyan-950">About Me</p>
+          </li>
+          <li>
+            <p class="px-20 mb-5 text-cyan-800 font-medium">Informatics graduate with a focus on programming, software
+              analysis, and design.
+              Recognized for being active, honest, responsible, and possessing a strong curiosity and dedication to
+              continuous
+              learning, thriving in demanding environments.</p>
+          </li>
+          <li><a class="px-20 text-2xl mb-5 underline" href="">Download my resume</a></li>
+          <li class="flex gap-5 justify-center mt-5">
+            <a href="#"><img src="assets/linkedin.png" width="60" height="45"></a>
+            <a href="#"><img src="assets/instagram.png" width="60" height="25"></a>
+          </li>
+        </ul>
+      </mat-grid-tile>
+      <!-- Quote -->
+      <mat-grid-tile colspan="1" class="bg-cyan-950">
+        <p class="px-5 text-6xl font-medium text-cyan-50">Creation is the bridge between imagination and reality; every
+          new idea
+          brings the world closer to what it could be.</p>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="Contacts" class="py-20 px-40">
+    <div class="bg-gray-800 py-20 px-20 rounded-xl">
+      <p class="text-center text-6xl mb-10 text-white">What do you want for your project?</p>
+      <p class="text-cyan-50 text-lg font-light mb-10">Transform your vision into reality with a partner who brings
+        creativity, expertise, and dedication to every
+        project.
+        Let's collaborate to create something exceptional that not only meets your goals but exceeds your expectations.
+      </p>
+      <a href="#" class="flex justify-center items-center px-3 py-2 font-normal text-center text-white bg-cyan-700 rounded-lg 
+            hover:bg-cyan-800 focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-500 
+            dark:focus:ring-cyan-800 duration-300 text-2xl">
+        Contact Me
+        <mat-icon class="email-icon ml-5">email</mat-icon>
+      </a>
+    </div>
+  </section>
 
 </main>

@@ -12,23 +12,23 @@ import {MatGridListModule} from '@angular/material/grid-list';
 })
 export class MainComponent {
   frontendProjects = [
-    { title: 'Project One', description: 'A brief description of Project One.', image: 'assets/project1.jpg' },
-    { title: 'Project Two', description: 'A brief description of Project Two.', image: 'assets/project2.jpg' },
-    { title: 'Project Three', description: 'A brief description of Project Three.', image: 'assets/project3.jpg' },
+    { title: 'Project One', description: 'A brief description of Project One.', image: 'assets/sigma.png' },
+    { title: 'Project Two', description: 'A brief description of Project Two.', image: 'assets/sigma.png' },
+    { title: 'Project Three', description: 'A brief description of Project Three.', image: 'assets/sigma.png' },
     // Add more projects as needed
   ];
 
   dataAnalysisProjects = [
-    { title: 'Project One', description: 'A brief description of Project One.', image: 'assets/project1.jpg' },
-    { title: 'Project Two', description: 'A brief description of Project Two.', image: 'assets/project2.jpg' },
-    { title: 'Project Three', description: 'A brief description of Project Three.', image: 'assets/project3.jpg' },
+    { title: 'Project One', description: 'A brief description of Project One.', image: 'assets/sigma.png' },
+    { title: 'Project Two', description: 'A brief description of Project Two.', image: 'assets/sigma.png' },
+    { title: 'Project Three', description: 'A brief description of Project Three.', image: 'assets/sigma.png' },
     // Add more projects as needed
   ];
 
   gameMusicProjects = [
-    { title: 'Project One', description: 'A brief description of Project One.', image: 'assets/project1.jpg' },
-    { title: 'Project Two', description: 'A brief description of Project Two.', image: 'assets/project2.jpg' },
-    { title: 'Project Three', description: 'A brief description of Project Three.', image: 'assets/project3.jpg' },
+    { title: 'Project One', description: 'A brief description of Project One.', image: 'assets/sigma.png' },
+    { title: 'Project Two', description: 'A brief description of Project Two.', image: 'assets/sigma.png' },
+    { title: 'Project Three', description: 'A brief description of Project Three.', image: 'assets/sigma.png' },
     // Add more projects as needed
   ];
 

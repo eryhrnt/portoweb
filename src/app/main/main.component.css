@@ -1,23 +1,11 @@
-.project-card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 16px;
-    text-align: center;
-    background-color: #f5f5f5;
-  }
-  
-  .project-image {
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
-  }
-  
-  .project-title {
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  .project-description {
-    font-size: 14px;
-    color: #666;
-  }
+.style-icon{
+  scale: 1.5;
+  color: #164e63;
+  margin-right: 20px;
+}
+
+.email-icon{
+  scale: 2;
+  color: white;
+  margin-right: 20px;
+}
