@@ -5,28 +5,23 @@
     <mat-tab-group>
 
       <!-- Front-End -->
-      <mat-tab class="">
+      <mat-tab>
         <ng-template mat-tab-label>
           <mat-icon class="style-icon">computer</mat-icon>
           <p class="text-xl font-medium text-cyan-900">Front-End</p>
         </ng-template>
         <article>
-          <mat-grid-list cols="2" rowHeight="400px" gutterSize="16px">
+          <div class="mt-20 grid grid-cols-5 gap-4">
             @for (project of frontendProjects; track frontendProjects) {
-            <mat-grid-tile class="project-tile">
-              <div class="project-content">
-                <img [src]="project.image" class="w-48 h-48">
-                <div class="project-info">
-                  <h3 class="text-xl font-medium p-3">{{project.title}}</h3>
-                </div>
-              </div>
-            </mat-grid-tile>
-            <mat-grid-tile>
-              <p class="project-description">{{project.description}}</p>
-            </mat-grid-tile>
+            <div class="col-span-3">
+              <img [src]="project.image" class="">
+            </div>
+            <div class="col-span-2 bg-cyan-900 p-5 rounded-xl">
+              <h3 class="text-4xl font-semibold p-3 text-center text-cyan-50">{{project.title}}</h3>
+              <p class="text-cyan-50 text-2xl font-light p-5">{{project.description}}</p>
+            </div>
             }
-
-          </mat-grid-list>
+          </div>
         </article>
       </mat-tab>
 
@@ -38,21 +33,18 @@
         </ng-template>
 
         <article>
-          <mat-grid-list cols="2" rowHeight="400px" gutterSize="16px">
+          <!-- <div class="mt-20 grid grid-cols-5 gap-4">
             @for (project of dataAnalysisProjects; track dataAnalysisProjects) {
-            <mat-grid-tile class="project-tile">
-              <div class="project-content">
-                <img [src]="project.image" class="w-48 h-48">
-                <div class="project-info">
-                  <h3 class="text-xl font-medium p-3">{{project.title}}</h3>
-                </div>
-              </div>
-            </mat-grid-tile>
-            <mat-grid-tile>
-              <p class="project-description">{{project.description}}</p>
-            </mat-grid-tile>
+            <div class="col-span-3">
+              <img [src]="project.image" class="">
+            </div>
+            <div class="col-span-2 bg-cyan-900 p-5 rounded-xl">
+              <h3 class="text-4xl font-semibold p-3 text-center text-cyan-50">{{project.title}}</h3>
+              <p class="text-cyan-50 text-2xl font-light p-5">{{project.description}}</p>
+            </div>
             }
-          </mat-grid-list>
+          </div> -->
+          <p class="text-7xl text-center my-20">IN DEVELOPMENT</p>
         </article>
 
       </mat-tab>
@@ -63,33 +55,28 @@
           <p class="text-xl font-medium text-cyan-900">Game Music & FX</p>
         </ng-template>
 
-        <article>
-          <mat-grid-list cols="2" rowHeight="400px" gutterSize="16px">
+        <!-- <article>
+          <div class="mt-20 grid grid-cols-5 gap-4">
             @for (project of gameMusicProjects; track gameMusicProjects) {
-            <mat-grid-tile class="project-tile">
-              <div class="project-content">
-                <img [src]="project.image" class="w-48 h-48">
-                <div class="project-info">
-                  <h3 class="text-xl font-medium p-3">{{project.title}}</h3>
-                </div>
-              </div>
-            </mat-grid-tile>
-            <mat-grid-tile>
-              <p class="project-description">{{project.description}}</p>
-            </mat-grid-tile>
+            <div class="col-span-3">
+              <img [src]="project.image" class="">
+            </div>
+            <div class="col-span-2 bg-cyan-900 p-5 rounded-xl">
+              <h3 class="text-4xl font-semibold p-3 text-center text-cyan-50">{{project.title}}</h3>
+              <p class="text-cyan-50 text-2xl font-light p-5">{{project.description}}</p>
+            </div>
             }
-
-          </mat-grid-list>
-        </article>
-
+          </div>
+        </article> -->
+        <p class="text-7xl text-center my-20">IN DEVELOPMENT</p>
       </mat-tab>
     </mat-tab-group>
 
   </section>
 
   <!-- About Section -->
-  <section id="About" class="py-20">
-    <mat-grid-list cols="2" rowHeight="500px" gutterSize="10px">
+  <section id="About" class="py-10">
+    <mat-grid-list cols="2" gutterSize="10px">
       <!-- Profile -->
       <mat-grid-tile colspan="1" class="bg-cyan-50">
         <ul>
@@ -97,21 +84,35 @@
             <div class=" w-32 h-32 rounded-full overflow-clip bg-red-500 mb-5">
               <img src="assets/avatar.jpg" width="160" height="160" class="">
             </div>
-          
+
           <li>
             <p class="text-center text-3xl font-semibold mb-5 text-cyan-950">About Me</p>
           </li>
           <li>
-            <p class="px-20 mb-5 text-cyan-800 font-medium">Informatics graduate with a focus on programming, software
-              analysis, and design.
-              Recognized for being active, honest, responsible, and possessing a strong curiosity and dedication to
-              continuous
-              learning, thriving in demanding environments.</p>
+            <p class="px-20 mb-10 text-cyan-800 font-normal text-xl">IT engineer with a focus on programming, software
+              analysis,
+              and design. Recognized for being active, honest, responsible, and possessing a strong curiosity and
+              dedication to
+              continuous learning, thriving in demanding environments.</p>
           </li>
-          <li><a class="px-20 text-2xl mb-5 underline" href="">Download my resume</a></li>
+          <li>
+            <a class="ml-12 px-20 text-2xl flex justify-center" href="" download="assets/resumeEryHarinanto.pdf">
+              <button
+                class="text-center text-white bg-cyan-700 rounded-lg p-5
+              hover:bg-cyan-950 focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:bg-cyan-900 dark:hover:bg-cyan-700 
+              dark:focus:ring-cyan-800 duration-300 transition ease-in-out hover:-translate-y-1 hover:scale-110">
+                Download My Resume</button>
+              <mat-icon class="download-icon animate-bounce">arrow_downward</mat-icon>
+            </a>
+
+          </li>
           <li class="flex gap-5 justify-center mt-5">
-            <a href="https://www.linkedin.com/in/ery-harinanto-12a716220/"><img src="assets/linkedin.png" width="60" height="45"></a>
-            <a href="https://www.instagram.com/ery_hrnt/"><img src="assets/instagram.png" width="60" height="25"></a>
+            <a target="_blank" href="https://www.linkedin.com/in/ery-harinanto-12a716220/"><img
+                src="assets/linkedin.png" width="60" height="45"></a>
+            <a target="_blank" href="https://www.instagram.com/ery_hrnt/"><img src="assets/instagram.png" width="60"
+                height="25"></a>
+            <a target="_blank" href="https://github.com/eryhrnt"><img src="assets/github.png" class="rounded-xl" width="60"
+                height="25"></a>
           </li>
         </ul>
       </mat-grid-tile>
