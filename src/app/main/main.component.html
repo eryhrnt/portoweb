@@ -1,6 +1,6 @@
 <main>
   <!-- Project Section -->
-  <section id="MyProjects" class="px-20 pt-20">
+  <section id="MyProjects" class="p-20">
     <p class="mb-20 text-center text-6xl font-medium text-cyan-900">My Projects</p>
     <mat-tab-group>
 
@@ -11,7 +11,7 @@
           <p class="text-xl font-medium text-cyan-900">Front-End</p>
         </ng-template>
         <article>
-          <div class="mt-20 grid grid-cols-5 gap-4">
+          <div class="mt-20 grid grid-cols-5 gap-10">
             @for (project of frontendProjects; track frontendProjects) {
             <div class="col-span-3">
               <img [src]="project.image" class="">
